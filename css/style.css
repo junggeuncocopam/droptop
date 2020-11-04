@@ -1,0 +1,488 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {text-decoration: none;}
+li {list-style-type: none;}
+@font-face {
+    font-family: "SabonLTStd-BoldItalic";
+    src: url("../font/SabonLTStd-BoldItalic.otf");
+}
+@font-face {
+    font-family: "SabonLTStd-Italic";
+    src: url("../font/SabonLTStd-Italic.otf");
+}
+@font-face {
+    font-family: "SabonLTStd-Roman";
+    src: url("../font/SabonLTStd-Roman.otf");
+}
+@font-face {
+    font-family: "SabonLTStd-Bold";
+    src: url("../font/SabonLTStd-Bold.otf");
+}
+@font-face {
+    font-family: "Spoqa Han Sans Light";
+    src: url(../font/Spoqa\ Han\ Sans\ Light.ttf);
+}
+@font-face {
+    font-family: "Spoqa Han Sans Regular";
+    src: url(../font/Spoqa\ Han\ Sans\ Regular.ttf);
+}
+/* @font-face {
+    font-family: "Spoqa Han Sans Thin";
+    src: url(../font/Spoqa\ Han\ Sans\ Thin.ttf);
+} */
+@font-face {
+    font-family: "Spoqa Han Sans Bold";
+    src: url(../font/Spoqa\ Han\ Sans\ Bold.ttf);
+}
+body {
+    font-family: "Spoqa Han Sans Regular";
+    color: black;
+}
+
+/* header(nav) */
+header {
+    max-width: 1920px;
+    min-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    overflow: hidden;
+}
+header > #navi {
+    width: 1920px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0);
+    position: fixed;
+    z-index: 9999;
+    transition-duration: 0.2s;
+}
+header > #navi > h1 {
+    position: absolute;
+    left: 21px; top: 15px;
+    z-index: 9999;
+}
+header > #navi > h1 > a > img {
+    width: 45px; height: 50px;
+}
+header > #navi > nav {
+    position: absolute;
+    left: 153px; top: 27px;
+    width: 90%; height: 30px;
+    z-index: 9999;
+    /* overflow: hidden; */
+    /* outline: 2px solid red; */
+}
+header > #navi > nav > ul > .depth1 {
+    float: left;
+    /* width: 75px; */
+    text-align: center;
+    margin-right: 25px;
+    width: calc(40% / 5);
+    min-width: 75px;
+} 
+header > #navi > nav > ul > .depth1 > a {
+    font-family: "SabonLTStd-BoldItalic";
+    color: #2A2626;
+    font-size: 17px;
+}
+header > #navi > nav > ul > .depth1 > .depth2 {
+    padding-top: 10px;
+    display: none;
+    z-index: 9999;
+}
+header > #navi > nav > ul > .depth1 > .depth2 a {
+    color: #2A2626;
+    font-size: 12px;
+    font-family: "Spoqa Han Sans Regular";
+    font-weight: 600;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+    
+}
+
+/* main_visual */
+#main_visual {
+    width: 1920px;
+    min-width: 1200px;
+    height: 1000px;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+#main_left {
+    float: left;
+    background: url("../image/main_banner.png");
+    background-repeat: no-repeat;
+    width: 988px;
+    height: 1000px;
+}
+#main_left > h2 {
+    margin-top: 348px;
+    margin-left: 237px;
+    font-size: 15px;
+    color: white;
+}
+#main_left > img {
+    margin-left: 176px;
+    margin-top: 32px;
+}
+#main_left > p {
+    margin-top: 148px;
+    margin-left: 172px;
+    width: 400px;
+    color: white;
+    font-size: 18px;
+    opacity: 0.8;
+    font-family: "Spoqa Han Sans Light";
+    line-height: 30px;
+}
+#main_left > a {
+    position: absolute;
+    left: 680px; top: 733px;
+    opacity: 0.5;
+}
+#main_left > a:hover {
+    opacity: 1;
+}
+#main_right {
+    float: left;
+    position: relative;
+    background: url("../image/Rectangle\ 1\ copy\ 2.png");
+    background-color: black;
+    width: 931px;
+    height: 1103px;
+
+}
+#main_right > .event {
+    position: absolute;
+    width: 533px; height: 754px;
+    /* outline: 2px solid red; */
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    overflow: hidden;
+}
+#main_right > .event > .event_benner {
+    width: 1599px; height: 754px;
+    /* outline: 2px solid green; */
+    transition-duration: 0.5s;
+}
+#main_right > .event > .event_benner img {
+    float: left;
+    width: 533px; height: 754px;
+}
+#main_right > ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 920px;
+}
+#main_right > ul > li a {
+    display: block;
+    background: white;
+    opacity: 0.3;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    text-indent: 9999px;
+}
+#main_right > ul > li a.white {
+    opacity: 1;
+}
+#main_right > ul > li {
+    display: inline-block;
+    margin-right: 25px;
+}
+#main_right > ul > li:last-child {
+    margin-right: 0;
+}
+#main_right > .l_btn {
+    position: absolute;
+    top: 45%;
+    left: 84px;
+    opacity: 0.3;
+}
+#main_right > .r_btn {
+    position: absolute;
+    top: 45%;
+    right: 84px;
+    opacity: 0.3;
+}
+#main_right > .l_btn:hover,
+#main_right > .r_btn:hover {
+    opacity: 1;
+}
+
+/* best_menu */
+#best_menu {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1200px;
+    height: 1188px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    background: #FFFAEC;
+    overflow: hidden;
+}
+#best_menu > h2 {
+    text-align: center;
+    margin-top: 153px;
+    font-family: "SabonLTStd-BoldItalic";
+}
+#best_menu > .menu {
+    position: absolute;
+    width: 1648px;
+    height: 560px;
+    margin-top: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* outline: 1px solid red; */
+    overflow: hidden;
+    
+}
+#best_menu > .menu > .menu_in {
+    width: 3783px; height: 560px;
+    transition-duration: 0.5s;
+}
+#best_menu > .menu > .menu_in > .best {
+    width: 367px; height: 560px;
+    background: white;
+    text-align: center;
+    float: left;
+    margin-right: 60px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+}
+#best_menu > .menu > .menu_in > .best:last-child {
+    margin-right: 0;
+}
+#best_menu > .menu > .menu_in > .best:hover {
+    background: #3C3033;
+    border-radius: 100px;
+    color: white;
+}
+#best_menu > .menu > .menu_in > .best > img {
+    width: 367px;
+}
+#best_menu > .menu > .menu_in > .best h3 {
+    font-size: 19px;
+    margin-top: 40px;
+}
+#best_menu > .menu > .menu_in > .best p {
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 12px;
+    font-family: "Spoqa Han Sans Light";
+}
+#best_menu .see {
+    position: absolute;
+    left: 50%; top: 951px;
+    transform: translateX(-50%);
+    display: block;
+    width: 509px; height: 66px;
+    background: #1F1F1F;
+    color: white;
+    font-family: "SabonLTStd-Roman";
+    font-size: 19px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 22px;
+}
+#best_menu .see:hover {
+    color: #1F1F1F;
+    background: white;
+}
+#best_menu > img.left_btn {
+    position: absolute;
+    left: 62px; top: 554px;
+    opacity: 0.3;
+}
+#best_menu > img.right_btn {
+    position: absolute;
+    right: 62px; top: 554px;
+    opacity: 0.3;
+}
+#best_menu > img.left_btn:hover,
+#best_menu > img.right_btn:hover {
+    opacity: 1;
+}
+/* DROPTOP M */
+#droptop_m {
+    position: relative;
+    max-width: 1920px; height: 1166px;
+    min-width: 1200px;
+    background: url("../image/DROPTOP-M.png");
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+#droptop_m > h2 {
+    font-size: 86px;
+    font-family: "SabonLTStd-BoldItalic";
+    color: white;
+    padding-top: 137px; margin-left: 282px;
+}
+#droptop_m > div > h3 {
+    color: white;
+    font-family: "SabonLTStd-Roman";
+    padding-top: 10px;
+}
+#droptop_m > .new {
+    margin-left: 282px; margin-top: 147px;
+}
+#droptop_m > .different {
+    position: absolute;
+    left: 648px;
+    top: 768px;
+}
+#droptop_m > .put {
+    position: absolute;
+    left: 845px; top: 563px;
+}
+#droptop_m > .put > h3 {
+    text-align: center;
+}
+#droptop_m > .grayBox {
+    position: absolute;
+    display: block;
+    width: 195px; height: 204px;
+    background: #1A1A1A;
+    left: 1439px; top: 359px;
+}
+#droptop_m > .salguBox {
+    position: absolute;
+    display: block;
+    width: 195px; height: 204px;
+    background: #F3E9CC;
+    left: 1243px; top: 156px;
+}
+#droptop_m > .salguBox > a > .kok {
+    margin-left: 28px;
+    margin-top: 24px;
+    background-image: url("../image/Vector\ Smart\ Object1.png");
+    width: 22.35px; height: 11.17px;
+    background-repeat: no-repeat;
+}
+#droptop_m > .salguBox > a > p {
+    color: #1A1A1A;
+    width: 100px;
+    font-family: "SabonLTStd-BoldItalic";
+    margin-top: 96px;
+    margin-left: 28px;
+}
+#droptop_m > .salguBox:hover {
+    background: #3C3033;
+}
+#droptop_m > .salguBox:hover > a > p {
+    color: white;
+}
+#droptop_m > .salguBox:hover > a > .kok {
+    background-image: url("../image/Vector\ Smart\ Object1_1.png");
+}
+#droptop_m > .about {
+    position: absolute;
+    width: 273px;
+    left: 848px; top: 380px;
+    /* outline: 1px solid red; */
+}
+#droptop_m > .about > h3 {
+    padding: 0 10px;
+    border-left: 4px solid #8F8F8F;
+}
+#droptop_m > .about > p {
+    padding-top: 25px;
+    color: white;
+    font-family: "Spoqa Han Sans Light";
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* 창업안내 */
+#franchise {
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#franchise > img {
+    float: left;
+}
+#franchise > .fran {
+    float: left;
+    margin-left: 142px;
+    margin-top: 178px;
+}
+#franchise > .fran > h2 {
+    font-size: 20px;
+    font-family: "SabonLTStd-Bold";
+}
+#franchise > .fran > p {
+    font-size: 14px;
+    padding-top: 20px;
+    font-family: "Spoqa Han Sans Light";
+}
+#franchise > .fran > a {
+    display: block;
+    width: 224px; height: 50px;
+    color: white;
+    background: #3D3033;
+    border-radius: 16px;
+    padding-top: 14px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#franchise > .fran > a:hover {
+    background: #F3E9CC;
+    color: #3D3033;
+}
+
+/* footer */
+#footer {
+    max-width: 1920px; height: 379px;
+    min-width: 1200px;
+    margin: 0 auto;
+    background: #161616;
+}
+#footer > img {
+    float: left;
+    width: 368.74px;
+    margin-left: 142px; margin-top: 127px;
+    /* outline: 2px solid red; */
+}
+#footer > .inser {
+    display: inline-block;
+    width: 719px;
+    margin-left: 193px;
+    margin-top: 127px;
+    /* outline: 2px solid red; */
+}
+#footer > .inser > ul > li {
+    display: inline-block;
+    color: white;
+}
+#footer > .inser li > a {
+    color: white;
+    margin-right: 5px;
+    font-size: 14px;
+}
+#footer > .inser > p {
+    padding-top: 15px;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+}
+#footer > .sns {
+    float: right;
+    margin-right: 143px;
+    margin-top: 221px;
+}
+#footer > .sns > a {
+    margin-left: 20px;
+}

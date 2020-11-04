@@ -1,0 +1,23 @@
+/* style4.css */
+
+header > #navi {
+    background: white;
+}
+
+header > nav > ul > .depth1 > .depth2 {
+    position: relative;
+}
+
+#store {
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+#store > h2 {
+    margin-top: 134px;
+    margin-bottom: 98px;
+    font-size: 27px;
+    font-family: "SabonLTStd-BoldItalic";
+}

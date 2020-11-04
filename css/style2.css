@@ -1,0 +1,114 @@
+/* style2.css */
+
+header > #navi {
+    background: white;
+}
+#story {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    overflow: hidden;
+}
+#story > .dStory {
+    float: left;
+    margin-left: 423px;
+    margin-top: 553px;
+    margin-bottom: 80px;
+    /* outline: 1px solid red; */
+    width: 611px;
+    text-align: right;
+}
+#story > .dStory > h2 {
+    font-family: "SabonLTStd-BoldItalic";
+    font-size: 21px;
+    padding-bottom: 55px;
+}
+#story > .dStory > p {
+    font-size: 15px;
+    line-height: 37px;
+    font-family: "Spoqa Han Sans Light";
+}
+#story > img {
+    margin-left: 94px;
+}
+
+/* POWER OFFER */
+#power_offer {
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+#power_offer > .offer {
+    float: left;
+    background: #FFFAEC;
+    width: 1353px; height: 1199px;
+}
+#power_offer > .offer > h2 {
+    font-family: "SabonLTStd-BoldItalic";
+    font-size: 88px;
+    margin-left: 138px; margin-top: 98px;
+}
+#power_offer > .offer > p {
+    margin-left: 138px; padding-top: 8px;
+    font-size: 14px;
+    color: #494747;
+}
+#power_offer > .offer > img {
+    margin-left: 282px; margin-top: 152px;
+}
+#power_offer > ul {
+    float: left;
+    margin-left: 55px; margin-top: 569px;
+    width: 385px;
+}
+#power_offer > ul > li {
+    font-size: 19px;
+    font-family: "Spoqa Han Sans Bold";
+    padding-bottom: 55px;
+}
+
+/* interior */
+#interior {
+    position: relative;
+    max-width: 1920px; height: 1193px;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding-top: 253px;
+    overflow: hidden;
+}
+#interior > h2 {
+    font-family: "SabonLTStd-BoldItalic";
+    font-size: 27px;
+    text-align: center;
+}
+#interior > .inco {
+    position: absolute;
+    margin-top: 109px;
+    width: 1638px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* outline: 2px solid red; */
+    overflow: hidden;
+}
+#interior > .inco > .concept {
+    float: left;
+    width: 510px;
+    margin-right: 54px;
+}
+#interior > .inco > .concept:last-child {
+    margin-right: 0;
+}
+#interior > .inco > .concept > h3 {
+    margin-top: 76px;
+    font-size: 19px;
+    font-family: "SabonLTStd-Bold";
+}
+#interior > .inco > .concept > p {
+    padding-top: 38px;
+    font-size: 16px;
+}

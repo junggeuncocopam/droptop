@@ -1,0 +1,68 @@
+/* style3.css */
+
+
+header > #navi {
+    background: white;
+}
+#coffeeMenu {
+    position: relative;
+    max-width: 1920px;
+    min-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#coffeeMenu > .coffee {
+    margin-top: 109px;
+    margin-left: 141px;
+    margin-bottom: 109px;
+}
+#coffeeMenu > .coffee > h2 {
+    font-size: 88px;
+    font-family: "SabonLTStd-BoldItalic";
+}
+#coffeeMenu > .coffee > p {
+    font-size: 14px;
+    color: #494747;
+}
+#coffeeMenu > .coffeeImage {
+    position: relative;
+    width: 1638px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    margin-bottom: 202px;
+}
+#coffeeMenu > .coffeeImage > .coImg {
+    float: left;
+    width: 510px; height: 601px;
+    margin-right: 54px;
+    margin-bottom: 59px;
+    text-align: center;
+}
+#coffeeMenu > .coffeeImage > .coImg:nth-child(3n) {
+    margin-right: 0;
+}
+#coffeeMenu > .coffeeImage > .coImg > .eng {
+    padding-top: 31px;
+    font-size: 12px;
+    font-family: "SabonLTStd-Italic";
+}
+#coffeeMenu > .coffeeImage > .coImg > .menuName {
+    padding-top: 15px;
+    font-size: 21px;
+    font-family: "Spoqa Han Sans Bold";
+}
+
+/* hover */
+#coffeeMenu > .coffeeImage > .coImg > .ci {
+    width: 510px; height: 512px;
+    overflow: hidden;
+}
+#coffeeMenu > .coffeeImage > .coImg > .ci > img {
+    transition-duration: 0.2s;
+    width: 510px; height: 512px;
+    /* outline: 1px solid red; */
+}
+#coffeeMenu > .coffeeImage > .coImg:hover > .ci > img {
+    transform: scale(1.1, 1.1);
+}
